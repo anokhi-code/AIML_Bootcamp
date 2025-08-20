@@ -16,7 +16,5 @@ class MarvelController:
     def display_character(self):
         self.view.display_character()
 
-if __name__ == "__main__":   # correct way to check
-    controller = MarvelController()   # create controller
-    controller.set_character_details()
-    controller.display_character()
+
+
