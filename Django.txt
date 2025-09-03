@@ -1,0 +1,59 @@
+today agenda
+framework
+Django 
+Introduction 
+environment creation and activation
+installation
+Architecture & execution
+
+Django -- high level , open source phython web framework 
+build secure scalable, and maintainable web applications
+
+key features
+rapid developement -- build apps fast with less code
+built- in Admin panel- 
+ORM- object Relation mapping- 
+scalability
+
+uses 
+1. web application
+2. content management system
+3. APIs & backend development
+
+How to create Django project
+Step 1 
+mkdir djangoproject
+Step 2
+create virtual environment 
+python -m venv myenv
+Step3
+activate the environment
+cd myenv/Scripts
+activate
+Step 4
+Install django
+pip install django
+Step 5 
+Create project
+django-admin startproject myproject
+cd myproject
+Step 6
+python manage.py startapp library
+python manage.py makemigrations
+Step 7
+go to the settings.py line no-39 write app name and save the file
+Step 8
+Goto the model.py
+create model
+Step 9
+goto admin.py and register ur model
+step 10
+python manage.py make migrations
+python manage.py migrate
+Step 11
+Create superuser
+python manage.py createsuperuser
+Step 12
+python mange.py runserver
+
+
