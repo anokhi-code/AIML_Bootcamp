@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "f0cc4717-c122-4b28-888c-79d5954e99d6",
+		"name": "AI ML Veracity",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13300173"
+	},
+	"item": [
+		{
+			"name": "Book",
+			"item": []
+		},
+		{
+			"name": "Author",
+			"item": []
+		},
+		{
+			"name": "Add Auhtor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"J.K. Rowling\",\n    \"email\": \"jkrowling@example.com\",\n    \"bio\": \"British author, best known for the Harry Potter series\",\n    \"DOB\": \"1965-07-31\"\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/author/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"author",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://127.0.0.1:8000/api/authors/ \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"name\": \"J.K. Rowling\",\n    \"email\": \"jkrowling@example.com\",\n    \"bio\": \"British author, best known for the Harry Potter series\",\n    \"DOB\": \"1965-07-31\"\n  }'"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/author/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"author",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl -X GET http://127.0.0.1:8000/author/"
+			},
+			"response": []
+		},
+		{
+			"name": "Add Book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Harry Potter and the Philosopher's Stone\",\n    \"author\": \"J.K. Rowling\",\n    \"description\": \"The first book in the Harry Potter series\",\n    \"pages\": 223,\n    \"price\": 12.99\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/book/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"book",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://127.0.0.1:8000/book/ \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"title\": \"Harry Potter and the Philosopher'\\''s Stone\",\n    \"author\": \"J.K. Rowling\",\n    \"description\": \"The first book in the Harry Potter series\",\n    \"pages\": 223,\n    \"price\": 12.99\n  }'"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/book/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"book",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl -X GET http://127.0.0.1:8000/book/"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Author ",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/author/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"author",
+						"1",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl -X DELETE http://127.0.0.1:8000/author/1/ \\\n  -H \"Content-Type: application/json\""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Author",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"J.K. Rowling - Completely Updated\",\n    \"email\": \"jkrowling.new@example.com\",\n    \"bio\": \"Completely new bio - British author, best known for the Harry Potter series. Also writes under the pseudonym Robert Galbraith. Updated everything!\",\n    \"DOB\": \"1965-07-31\"\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/author/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"author",
+						"1",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl -X PUT http://127.0.0.1:8000/author/1/ \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"name\": \"J.K. Rowling - Completely Updated\",\n    \"email\": \"jkrowling.new@example.com\",\n    \"bio\": \"Completely new bio - British author, best known for the Harry Potter series. Also writes under the pseudonym Robert Galbraith. Updated everything!\",\n    \"DOB\": \"1965-07-31\"\n  }'"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Book",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Harry Potter and the Philosopher's Stone - Completely Updated\",\n    \"author\": \"J.K. Rowling - Updated Author Name\",\n    \"description\": \"Completely new description - The first book in the Harry Potter series. A magical adventure for all ages. Updated everything!\",\n    \"pages\": 250,\n    \"price\": 19.99\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/book/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"book",
+						"1",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl -X PUT http://127.0.0.1:8000/book/1/ \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"title\": \"Harry Potter and the Philosopher'\\''s Stone - Completely Updated\",\n    \"author\": \"J.K. Rowling - Updated Author Name\",\n    \"description\": \"Completely new description - The first book in the Harry Potter series. A magical adventure for all ages. Updated everything!\",\n    \"pages\": 250,\n    \"price\": 19.99\n  }'"
+			},
+			"response": []
+		}
+	]
+}
