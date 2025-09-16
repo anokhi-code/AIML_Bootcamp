@@ -1,0 +1,73 @@
+DJANGO  ----  BACKEND
+
+mkdir ddjang
+open folder ddjago
+create environment
+python -m venv myenv
+cd myenv/Scripts
+activate
+cd..
+cd..
+pip install Django
+django-admin startproject myproject
+cd myproject
+python maqnage.py startapp myapp
+python manage.py makemigration
+goto settings.py file, on line number 39, give your app name('myapp')
+inside app('myapp') got to models.py file
+example-
+class product(models,Model)
+       product_name= models,CharField(max_length=90)
+goto admin.py and register your model
+python manage.py makemigrations
+python manage.py migrate
+python mange.py createsuperuser
+username, email, pwd
+python manage.py runserver
+create a serializer.py file (write code for seriler)(create the file inside app)
+create a viewset inside ur views.py(this file inside the app)
+create url for ur model(this file inside yourproject)
+
+Database connection
+gotosettings.py file
+gotodatabase and comment previous and write database detail makesure ur user name and password is correct
+
+open sql workbench
+create a database for ur app(create database myapp;)
+
+vscode terminal execute runserver command
+admin panel feed the data  and check ur sql workbench database(it will save all the value inside ur workbench whatever u feed in ur runserver
+
+Import csv file from workbench and then save ur file inside urapp 
+perform data nalytics
+
+install postman
+perform CRUD, get, post,update, delete, check the all api
+
+FRONEND React server
+install node.js
+open command prompt
+code
+open terminal
+node --version
+npx create-react-app myapp
+cd myapp
+npm start
+
+goto setting.py file in backend and install crosheaders allow origin and csrf
+goto App.js inside this function u fetch the data from backend
+
+in browser search MUI and click installation and copy som installation code
+default installation code
+with styledcomponent
+roboto font
+google web fonts copy the code and paste it inside index.html file after line number 12(index.html file is inside public)
+install iconos
+google web fonto copy and paste below previous googlw web fonto code in index.html
+
+go to componets in MUI 
+search the Appbar -- Appbar with a primarySearch field-- copy JS code
+create a js file in App.js (PrimarSearchAppBar.js) and save the js code inside it
+
+now do run the react
+npm start
